@@ -1,0 +1,200 @@
+//////////// 1.16.210-iOS @darkshuper ////////////
+
+Dimension::Dimension(Level&, AutomaticID<Dimension, int>, DimensionHeightRange, Scheduler&, std::string);
+0x103b6a4a0
+------------------------
+InGamePlayScreen::render(ScreenContext&, FrameRenderObject const&)
+0x10038d0f0
+InGamePlayScreen::postRenderUpdate(ScreenContext&)
+0x10038d26c
+InGamePlayScreen::isShowingMenu() const
+0x10038d2d4
+InGamePlayScreen::onFocusGained()
+0x10038d2dc
+InGamePlayScreen::renderGameBehind() const
+0x10038d2e0
+InGamePlayScreen::renderOnlyWhenTopMost() const
+0x10038d2e8
+InGamePlayScreen::isModal() const
+0x10038d2f0
+InGamePlayScreen::shouldStealMouse() const
+0x10038d2f8
+InGamePlayScreen::handleDirection(DirectionId, float, float, FocusImpact)
+0x10038d344
+InGamePlayScreen::handlePointerPressed(bool)
+0x10038d7e4
+InGamePlayScreen::_isPlayerSuspended() const
+0x10038d814
+InGamePlayScreen::_renderLevelPrep(ScreenContext&, LevelRenderer&, Actor&)
+0x10038d880
+InGamePlayScreen::_pick(float)
+0x10038dda8
+InGamePlayScreen::_renderLevel(ScreenContext&, FrameRenderObject const&)
+0x10038f3a0
+InGamePlayScreen::_localPlayerTurned(float)
+0x10038f8c8
+InGamePlayScreen::_getPickRange()
+0x10038f8cc
+------------------------
+GameMode::attack(Actor&)
+0x102d50f14
+GameMode::getPickRange(InputMode const&, bool)
+0x102d536cc
+GameMode::getMaxPickRange()
+0x102d53770
+GameMode::getMaxPickRangeSqr()
+0x102d537a0
+GameMode::releaseUsingItem()
+0x102d537d8
+------------------------
+SurvivalMode::attack(Actor&)
+0x102d53e88
+SurvivalMode::interact(Actor&, Vec3 const&)
+0x102d53eac
+SurvivalMode::destroyBlock(BlockPos const&, unsigned char)
+0x102d53ed0
+SurvivalMode::startDestroyBlock(BlockPos const&, unsigned char, bool&)
+0x102d53ef4
+SurvivalMode::_showTrialReminder(bool)
+0x102d53f30
+SurvivalMode::startBuildBlock(BlockPos const&, unsigned char)
+0x102d5405c
+SurvivalMode::buildBlock(BlockPos const&, unsigned char)
+0x102d54120
+SurvivalMode::useItem(ItemStack&)
+0x102d54144
+SurvivalMode::useItemOn(ItemStack&, BlockPos const&, unsigned char, Vec3 const&, Block const*)
+0x102d54180
+SurvivalMode::tick()
+0x102d541bc
+------------------------
+ServerPlayer::tickWorld(Tick const&)
+0x102a1af40
+------------------------
+LocalPlayer::tickWorld(Tick const&)
+0x100762740
+LocalPlayer::normalTick()
+0x100762bc0
+LocalPlayer::travel(IMobMovementProxy&, float, float, float) const
+0x100765068
+LocalPlayer::travel(float, float, float)
+0x1007652f0
+LocalPlayer::playEmote(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&)
+0x1007670a8
+------------------------
+Level::tick()
+0x103833968
+Level::getPlayer(ActorUniqueID) const
+0x10383225c
+Level::getPlayer(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&) const
+0x10383b94c
+------------------------
+ServerNetworkHandler::_displayGameMessage(Player const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&)
+0x10299c5bc
+ServerNetworkHandler::_getServerPlayer(NetworkIdentifier const&, unsigned char)
+0x10299d524
+ServerNetworkHandler::handle(NetworkIdentifier const&, CommandRequestPacket const&)
+0x10299db38
+ServerNetworkHandler::onTick()
+0x1029a5430
+ServerNetworkHandler::_getPlayer(NetworkIdentifier const&, unsigned char, ActorUniqueID const&)
+0x1029af4d4
+------------------------
+MinecraftCommands::executeCommand(std::__ndk1::shared_ptr<CommandContext>, bool) const
+0x102a723c4
+MinecraftCommands::setRegistryNetworkUpdateCallback(std::__ndk1::function<void (Packet const&)>) const
+0x102a72cd8
+MinecraftCommands::runCommand(HashedString const&, CommandOrigin&, CurrentCmdVersion)
+0x102a72ef4
+MinecraftCommands::runCommand(Command&, CommandOrigin&)
+0x102a7353c
+------------------------
+ServerLevel::tick()
+0x102a18db4
+ServerLevel::setCommandsEnabled(bool)
+0x102a18fd0
+ServerLevel::runCommand(HashedString const&, CommandOrigin&, CommandOriginSystem, CurrentCmdVersion)
+0x102a1a340
+ServerLevel::runCommand(Command&, CommandOrigin&, CommandOriginSystem)
+0x102a1a358
+ServerLevel::getCommands()
+0x102a1a36c
+ServerLevel::getFunctionManager()
+0x102a1a374
+ServerLevel::loadFunctionManager()
+0x102a1a37c
+ServerLevel::saveAdditionalData()
+0x102a1a3b0
+ServerLevel::getMobEvents()
+0x102a1a3f0
+ServerLevel::getMobEvents() const
+0x102a1a3f8
+ServerLevel::setDifficulty(Difficulty)
+0x102a1a400
+ServerLevel::getLevelEventCoordinator()
+0x102a1a47c
+ServerLevel::getPositionTrackerDBServer() const
+0x102a1a480
+------------------------
+LegacyClientNetworkHandler::onConnect(NetworkIdentifier const&)
+0x10065a044
+LegacyClientNetworkHandler::_getServerIdentifier() const
+0x100659eec
+LegacyClientNetworkHandler::onTick()
+0x100662328
+------------------------
+GuiData::GuiData(IClientInstance&)
+0x1003079cc
+GuiData::tick()
+0x100307fb4
+GuiData::displayClientMessage(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&)
+0x10030a11c
+GuiData::displayChatMessage(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&, std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&)
+0x10030a2f4
+------------------------
+BaseScreen::tick(int, int)
+0x100376950
+BaseScreen::frameUpdate(MinecraftUIFrameUpdateContext&)
+0x100376954
+BaseScreen::update(double)
+0x100376958
+BaseScreen::getScreenName() const
+0x100376a6c
+BaseScreen::setDebugFeature(UIDebugCommandFeature, bool) const
+0x100376bf4
+------------------------
+MainMenuScreenModel::getUserDisplayName() const
+0x100b10eac
+MainMenuScreenModel::setUserDisplayName(std::__ndk1::basic_string<char, std::__ndk1::char_traits<char>, std::__ndk1::allocator<char> > const&) const
+0x100b10f54
+------------------------
+EmoteWheelScreenController::_registerEventHandlers()
+0x10041bc00
+EmoteWheelScreenController::_registerBindings()
+0x10041bfc4
+EmoteWheelScreenController::onOpen()
+0x10041c72c
+EmoteWheelScreenController::_setHoverIndex(int)
+0x10041d004
+EmoteWheelScreenController::tick()
+0x10041cb00
+EmoteWheelScreenController::_onButtonPress(int)
+0x10041cb3c
+------------------------
+ScreenView::setDebugRendering(bool)
+0x1000574c4
+ScreenView::setDebugFocus(bool)
+0x1000574d0
+ScreenView::isDebugRendering()
+0x100057868
+ScreenView::isDebuggingFocus()
+0x100057874
+ScreenView::_removeFromControlCollection(UIControl&, ControlCollectionFlag)
+0x100059578
+ScreenView::_debugRenderControl(UIRenderContext&, UIControl const&) const
+0x100059e78
+------------------------
+hbui::View::setDebugFeature(UIDebugCommandFeature, bool)
+0x10033eb38
+hbui::Scene::setDebugFeature(UIDebugCommandFeature, bool) const
+0x10032d664
